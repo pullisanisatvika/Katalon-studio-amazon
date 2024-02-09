@@ -1,0 +1,18 @@
+plugins {
+    id 'groovy'
+    id 'com.katalon.gradle-plugin' version "0.1.1"
+}
+
+version = '0.4'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.12.457'
+
+}
+
+// typing "$gradle katalonCopyDependencies" will insert 14 jar files for AWS Java SDK for Amazon S3
